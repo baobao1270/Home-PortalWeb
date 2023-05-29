@@ -1,0 +1,12 @@
+<footer class="main-footer footer-type-1 text-xs">
+    <div class="footer-inner">
+        <div class="footer-text">
+            {{ replace $.Site.Params.footer.copyright "{year}" now.Year | markdownify }}
+            版本{{ $.Site.Params.footer.version }}
+            <a href="https://github.com/baobao1270/Home-PortalWeb/releases">检查更新</a>
+            <a href="" onclick="localStorage.clear();">清除缓存</a>
+        </div>
+    </div>
+</footer>
+</div><!-- main-content end -->
+</div><!-- page-container end -->

@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  github-release:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.108.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+          LC_ALL: en_US.UTF-8
+          LC_CTYPE: en_US.UTF-8
+          LANG: en_US.UTF-8
+        run: | 
+          echo "Rleease version is ${{ github.ref_name }}"
+          sed -i 's/version = "\[开发版\]"/version = "${{ github.ref_name }}"/' config.toml
+          cat config.toml | grep version
+          hugo -D --gc --minify --cleanDestinationDir
+          mkdir -p dist
+          cp -r public PortalWeb
+          zip -rq Home-PortalWeb-${{ github.ref_name }}.zip PortalWeb
+      - name: Publish to GitHub Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: Home-PortalWeb-${{ github.ref_name }}.zip

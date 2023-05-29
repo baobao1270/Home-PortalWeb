@@ -1,0 +1,177 @@
+---
+- taxonomy: 置顶
+  links:
+    - title: 博客
+      logo: Joseph.png
+      url: https://josephcz.xyz
+      description: Joseph Chris 的博客
+    - title: 网盘
+      logo: josephpan.png
+      url: https://storage.josephcz.xyz
+      description: Joseph Chris 的网盘
+    - title: B站账号
+      logo: 哔哩哔哩.png
+      url: https://space.bilibili.com/2266062/
+      description: Joseph Chris 的 B 站账号
+    - title: 帮我选择
+      logo: ChooseForMe.png
+      url: https://chooseforme.net
+      description: 解决选择困难症
+    - title: ChatGPT 中国版
+      logo: ChatGPT.png
+      url: https://chat.lty.vc
+      description: 人工智能对话
+    - title: 历史记录
+      logo: Chrome.png
+      url: chrome://history
+      description: Ctrl+H 查看历史记录
+    - title: 下载
+      logo: Chrome.png
+      url: chrome://downloads
+      description: Ctrl+J 查看下载
+    - title: 声音设置
+      logo: WindowsSettings.png
+      url: ms-settings:sound
+      description: 系统设置 - 声音
+    - title: 网络设置
+      logo: WindowsSettings.png
+      url: ms-settings:network-wifi
+      description: 系统设置 - 网络
+    - title: 系统更新
+      logo: WindowsSettings.png
+      url: ms-settings:windowsupdate
+      description: 系统设置 - Windows 更新
+    - title: 路由器设置
+      logo: miwifi.png
+      url: https://10.0.0.1
+      description: 打开路由器后台
+    
+
+- taxonomy: 影音视频
+  links:
+    - title: 腾讯视频
+      logo: 腾讯视频.png
+      url: http://v.qq.com/
+    - title: 优酷
+      logo: 优酷.png
+      url: http://www.youku.com/
+    - title: 爱奇艺
+      logo: 爱奇艺.png
+      url: https://www.iqiyi.com/
+    - title: 哔哩哔哩
+      logo: 哔哩哔哩.png
+      url: https://www.bilibili.com/
+    - title: 抖音
+      logo: douyin.jpeg
+      url: https://www.douyin.com
+    - title: 网易云音乐
+      logo: 网易云音乐.jpg
+      url: https://music.163.com/
+    - title: QQ 音乐
+      logo: QQ音乐.jpg
+      url: https://y.qq.com/
+
+- taxonomy: 资讯 / 购物 / 生活
+  links:
+    - title: 江苏电信
+      logo: 中国电信.png
+      url: https://www.189.cn/js/
+    - title: 淘宝
+      logo: 淘宝.png
+      url: https://www.taobao.com/
+    - title: 京东
+      logo: 京东.png
+      url: https://www.jd.com/
+    - title: 携程
+      logo: 携程.png
+      url: https://www.ctrip.com/
+    - title: 知乎
+      logo: 知乎.png
+      url: https://www.zhihu.com/
+    - title: 微博
+      logo: 微博.png
+      url: https://weibo.com/
+    - title: 小红书
+      logo: 小红书.png
+      url: https://www.xiaohongshu.com/
+    - title: 下厨房
+      logo: 下厨房.png
+      url: https://www.xiachufang.com/
+
+- taxonomy: 网络工具
+  links:
+    - title: QQ 邮箱
+      logo: qqmail.png
+      url: https://mail.qq.com/
+      description: QQ 邮箱
+    - title: 有道词典
+      logo: 有道词典.png
+      url: https://www.youdao.com/
+      description: 查字典
+    - title: 有道翻译
+      logo: 有道词典.png
+      url: http://fanyi.youdao.com/
+      description: 多语种在线翻译
+    - title: DeepL
+      logo: DeepL.png
+      url: https://www.deepl.com/
+      description: 更准确，但是国内访问有点慢
+    - title: 百度脑图
+      logo: 百度脑图.png
+      url: https://naotu.baidu.com
+      description: 在线编辑思维导图
+    - title: 帮我选择
+      logo: ChooseForMe.png
+      url: https://chooseforme.net
+      description: 解决选择困难症
+    - title: 稿定抠图
+      url: https://www.gaoding.com
+      logo: gaoding.png
+      description: 在线抠图
+    - title: 去除背景
+      url: https://cleanup.pictures
+      logo: cleanup_pictures.png
+      description: 去除图片背景
+    - title: 反义词查询
+      url: https://wantwords.net
+      logo: wantwords.ico
+      description: 查询中文反义词
+    - title: 近义词查询
+      url: https://tool.mingdawoo.com/lang/nearby_word/
+      logo: wantwords.ico
+      description: 查询中文近义词
+    - title: 网络测速 (国际)
+      url: https://speedtest.net
+      logo: speedtest.png
+      description: 测试网络速度
+    - title: 网络测速 (国内)
+      url: https://speedtest.cn
+      logo: speedtest.png
+      description: 测试网络速度
+    - title: 网络故障检测
+      url: https://www.itdog.cn
+      logo: itdog.png
+      description: 网络故障检测
+
+- taxonomy: 国外网站（需翻墙）
+  links:
+    - title: Google
+      logo: google.png
+      url: https://www.google.com/
+      description: Google 搜索
+    - title: YouTube
+      logo: youtube.png
+      url: https://www.youtube.com/
+      description: 国外视频网站
+    - title: Pixiv
+      logo: pixiv.png
+      url: https://www.pixiv.net/
+      description: 动漫图片网站
+    - title: Unsplash
+      logo: unsplash.png
+      url: https://unsplash.com/
+      description: 摄影图片网站
+    - title: ChatGPT
+      logo: ChatGPT.png
+      url: https://chat.openai.com/
+      description: 人工智能对话网站
